@@ -1,0 +1,19 @@
+VERSION "1.29"
+
+NS_ :
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+
+BS_:
+
+BU_: ECU_BODY ECU_CLUSTER
+
+BO_ 200 BodyStatus: 8 ECU_BODY
+ SG_ DoorStatus : 0|2@1+ (1,0) [0|3] "" ECU_CLUSTER
+ SG_ LightStatus : 2|2@1+ (1,0) [0|3] "" ECU_CLUSTER
+ SG_ WiperStatus : 4|2@1+ (1,0) [0|3] "" ECU_CLUSTER
+
+BO_ 201 ClusterInfo: 8 ECU_CLUSTER
+ SG
